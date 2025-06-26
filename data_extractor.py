@@ -149,8 +149,7 @@ class DataExtractor:
                     order_id_arr.append(order_id)
 
                     order_date_arr.append(order.get('order_date'))
-
-                    product_id_arr.append(product.get('product_id'))
+                    product_id_arr.append(product.get('item_id'))
                     product_name_arr.append(product.get('product_name'))
 
                     
