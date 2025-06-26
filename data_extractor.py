@@ -125,6 +125,9 @@ class DataExtractor:
                     if isinstance(product.get('quantity'), str):
                         continue
 
+                    if '' == product.get('product_name'):
+                        continue
+
 
                     category = product.get('category')
 
