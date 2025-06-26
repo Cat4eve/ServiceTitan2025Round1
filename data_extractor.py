@@ -134,6 +134,8 @@ class DataExtractor:
                     registration_date = item.get('registration_date')
                     if "/" in registration_date:
                         registration_date = datetime.strptime(registration_date, "%Y/%m/%d")
+                    elif "-" in registration_date:
+                        registration_date = datetime.strptime(registration_date, "%Y-%m-%d %H:%M:%S")
                     registration_date_arr.append(registration_date)
                     is_vip_arr.append(self._is_vip(item.get('customer_id')))
 
