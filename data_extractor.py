@@ -1,6 +1,5 @@
 import pickle
 import pandas as pd
-import numpy as np
 import string
 from datetime import datetime
 
