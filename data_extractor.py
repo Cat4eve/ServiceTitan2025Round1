@@ -139,7 +139,7 @@ class DataExtractor:
                     elif "-" in registration_date:
                         registration_date = datetime.strptime(registration_date, "%Y-%m-%d %H:%M:%S")
                     registration_date_arr.append(registration_date)
-                    is_vip_arr.append(self._is_vip(item.get('customer_id')))
+                    is_vip_arr.append(self._is_vip(item.get('id')))
 
                     order_id = order.get('order_id')
 
